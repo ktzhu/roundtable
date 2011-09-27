@@ -2,4 +2,4 @@
 *.pyc
 env
 build
-db
+db/*.sqlite3

@@ -6,5 +6,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    surl('hello', 'issues.views.hello'),
+    surl('<issue:s>/discover/', 'issues.views.discover'),
+    surl('<issue:s>/discuss/', 'issues.views.discuss'),
+    surl('<issue:s>/resolve/', 'issues.views.resolve'),
 )
