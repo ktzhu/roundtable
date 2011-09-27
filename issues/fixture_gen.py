@@ -1,10 +1,11 @@
 from fixture_generator import fixture_generator
 from issues import models as issues
+from django.contrib.auth import models as auth
 from datetime import datetime, timedelta
 
 now = datetime.today()
 
-@fixture_generator(issues.User)
+@fixture_generator(auth.User, issues.User)
 def test_users():
     users = issues.User.objects
     users.create(username='missmoderator', first_name='Miss', last_name='Moderator')

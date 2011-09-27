@@ -72,11 +72,11 @@
         "pk": 1, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-27 21:38:52", 
+            "resolve": "2011-09-27 21:43:02", 
             "name": "Something", 
-            "discover": "2011-09-26 23:38:52", 
-            "vote": "2011-09-28 09:38:52", 
-            "discuss": "2011-09-27 13:38:52", 
+            "discover": "2011-09-26 23:43:02", 
+            "vote": "2011-09-28 09:43:02", 
+            "discuss": "2011-09-27 13:43:02", 
             "description": "Yes, something."
         }
     }, 
@@ -84,12 +84,102 @@
         "pk": 2, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-27 07:38:52", 
+            "resolve": "2011-09-27 07:43:02", 
             "name": "Something else", 
-            "discover": "2011-09-26 23:38:52", 
-            "vote": "2011-09-27 08:38:52", 
-            "discuss": "2011-09-27 01:38:52", 
+            "discover": "2011-09-26 23:43:02", 
+            "vote": "2011-09-27 08:43:02", 
+            "discuss": "2011-09-27 01:43:02", 
             "description": "Yes, something."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "missmoderator", 
+            "first_name": "Miss", 
+            "last_name": "Moderator", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-27 09:43:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$6f0b6$612b15f160d3301a693798be69b40efed420f1f2", 
+            "email": "", 
+            "date_joined": "2011-09-27 09:43:03"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "james.joyce", 
+            "first_name": "James", 
+            "last_name": "Joyce", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-27 09:43:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$1cada$71c512cb4c5322c2d08c329f77b49ec5236fad46", 
+            "email": "", 
+            "date_joined": "2011-09-27 09:43:03"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "john.dewey", 
+            "first_name": "John", 
+            "last_name": "Dewey", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-27 09:43:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$157ce$453af95bc86e9c8aab50f0a440a56a2e13817cc2", 
+            "email": "", 
+            "date_joined": "2011-09-27 09:43:03"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "hannah.arendt", 
+            "first_name": "Hannah", 
+            "last_name": "Arendt", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-27 09:43:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$a712c$f5d2a769848331a2925582b686506575c780bc2e", 
+            "email": "", 
+            "date_joined": "2011-09-27 09:43:03"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "iris.murdoch", 
+            "first_name": "Iris", 
+            "last_name": "Murdoch", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-27 09:43:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$e5687$98b689fdac8a56f6dc54357c50253434b9f219e5", 
+            "email": "", 
+            "date_joined": "2011-09-27 09:43:03"
         }
     }
 ]
