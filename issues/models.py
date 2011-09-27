@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import models as auth
+from datetime import datetime
 
 class Issue(models.Model):
     name = models.CharField(max_length=255)
@@ -10,6 +11,17 @@ class Issue(models.Model):
     discuss = models.DateTimeField()
     resolve = models.DateTimeField()
     vote = models.DateTimeField()
+
+    @property
+    def phase(self):
+        now = datetime.today()
+        
+        for option in ['vote', 'resolve', 'discuss', 'discover']:
+            if getattr(self, option) <= now:
+                return options
+        
+        return None
+            
 
 class Solution(models.Model):
     issue = models.ForeignKey(Issue, related_name='solutions')

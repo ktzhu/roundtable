@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.comments',
+    'fixture_generator',
     'roundtable.issues',
 )
 

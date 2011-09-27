@@ -1,0 +1,95 @@
+[
+    {
+        "pk": 1, 
+        "model": "issues.rating", 
+        "fields": {
+            "score": 3, 
+            "user": 4, 
+            "solution": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.solution", 
+        "fields": {
+            "body": "Coincidentally, the solution to everything.", 
+            "author": 3, 
+            "issue": 1, 
+            "title": "More sad clowns."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.issue", 
+        "fields": {
+            "resolve": "2011-09-27 21:38:52", 
+            "name": "Something", 
+            "discover": "2011-09-26 23:38:52", 
+            "vote": "2011-09-28 09:38:52", 
+            "discuss": "2011-09-27 13:38:52", 
+            "description": "Yes, something."
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "issues.issue", 
+        "fields": {
+            "resolve": "2011-09-27 07:38:52", 
+            "name": "Something else", 
+            "discover": "2011-09-26 23:38:52", 
+            "vote": "2011-09-27 08:38:52", 
+            "discuss": "2011-09-27 01:38:52", 
+            "description": "Yes, something."
+        }
+    }
+]
