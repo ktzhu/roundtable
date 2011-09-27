@@ -18,7 +18,7 @@ class Issue(models.Model):
         
         for option in ['vote', 'resolve', 'discuss', 'discover']:
             if getattr(self, option) <= now:
-                return options
+                return option
         
         return None
             
@@ -29,9 +29,11 @@ class Solution(models.Model):
     body = models.TextField()
     author = models.ForeignKey('issues.User')
 
+
 class User(auth.User):
     subscriptions = models.ManyToManyField(Issue, related_name='subscribers')
     proxied_subscriptions = models.ManyToManyField(Issue, related_name='proxies')
+
 
 RATINGS = (
     (1, 'poor'),
