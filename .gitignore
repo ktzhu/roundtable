@@ -1,2 +1,6 @@
 .DS_Store
 env/
+*.pyc
+env
+build
+db.db

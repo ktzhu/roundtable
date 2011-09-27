@@ -1,2 +1,10 @@
-MoJo Hackfest 2011
+# MoJo Hackfest 2011
+
 Roundtable is a web platform connecting news, people and ideas.
+
+## Installation
+
+    virtualenv env --no-site-packages
+    source env/bin/activate
+    pip install -r requirements.txt
+    python manage.py syncdb
