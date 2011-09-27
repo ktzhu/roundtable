@@ -6,7 +6,5 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    surl('^admin/', include(admin.site.urls)),
-    surl('^comments/', include('django.contrib.comments.urls')),
-    surl('^', include(issues.urls)),
+    surl('hello', 'issues.views.hello'),
 )

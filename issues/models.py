@@ -12,18 +12,14 @@ class Issue(models.Model):
     vote = models.DateTimeField()
 
 class Solution(models.Model):
-    issue = models.ForeignKey(Issue)
+    issue = models.ForeignKey(Issue, related_name='solutions')
     title = models.CharField(max_length=255)
     body = models.TextField()
-    author = models.ForeignKey(User)
-
-class Subscription(models.Model):
-    issue = models.ForeignKey(Issue)
-    user = models.ForeignKey('issues.User')
-    proxy = models.ForeignKey('issues.User', null=True)
+    author = models.ForeignKey('issues.User')
 
 class User(auth.User):
-    issues = models.ManyToManyField(Issue, through=Subscription)
+    subscriptions = models.ManyToManyField(Issue, related_name='subscribers')
+    proxied_subscriptions = models.ManyToManyField(Issue, related_name='proxies')
 
 RATINGS = (
     (1, 'poor'),
@@ -33,6 +29,6 @@ RATINGS = (
     )
 
 class Rating(models.Model):
-    user = models.ForeignKey(User)
-    solution = models.ForeignKey(Solution)
-    score = models.IntField(choices=RATINGS)
+    user = models.ForeignKey(User, related_name='ratings')
+    solution = models.ForeignKey(Solution, related_name='ratings')
+    score = models.IntegerField(choices=RATINGS)
