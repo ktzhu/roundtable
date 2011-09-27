@@ -1,9 +1,11 @@
 from django.db import models
 from django.contrib.auth import models as auth
+from django.template.defaultfilters import slugify
 from datetime import datetime
 
 class Issue(models.Model):
     name = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255)
     description = models.TextField()
     
     # phase scheduling
@@ -22,6 +24,11 @@ class Issue(models.Model):
         
         return None
             
+    def save(self, *vargs, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        
+        super(Issue, self).save(*vargs, **kwargs)
 
 class Solution(models.Model):
     issue = models.ForeignKey(Issue, related_name='solutions')
