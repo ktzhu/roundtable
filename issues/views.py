@@ -6,6 +6,11 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate
 from models import Issue, Solution, User
 
+def overview(request):
+    return direct_to_template(request, 'overview.html', {
+        'issues': Issue.objects.all(),
+    })    
+
 def latest(request):
     return redirect(Issue.objects.latest(field_name='pk'))  
 
