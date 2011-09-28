@@ -3,7 +3,7 @@
 from django.views.generic.simple import direct_to_template
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
-from models import Issue, Solution
+from models import Issue, Solution, User
 
 def discover(request, issue):
     issue = get_object_or_404(Issue, slug=issue)
@@ -23,7 +23,13 @@ def resolve(request, issue):
     issue = get_object_or_404(Issue, slug=issue)
 
     if request.method == 'POST':
-        Solution.objects.create(**request.POST)
+        author = User.objects.get(pk=request.user.pk)
+        Solution.objects.create(
+            title=request.POST['title'], 
+            body=request.POST['body'],
+            issue=issue,
+            author=author,
+            )
 
     return direct_to_template(request, 'resolve.html', {
         'issue': issue,

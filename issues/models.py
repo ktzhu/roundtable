@@ -30,12 +30,17 @@ class Issue(models.Model):
         
         super(Issue, self).save(*vargs, **kwargs)
 
+    def __unicode__(self):
+        return self.name
+
 class Solution(models.Model):
     issue = models.ForeignKey(Issue, related_name='solutions')
     title = models.CharField(max_length=255)
     body = models.TextField()
     author = models.ForeignKey('issues.User')
 
+    def __unicode__(self):
+        return self.title
 
 class User(auth.User):
     subscriptions = models.ManyToManyField(Issue, related_name='subscribers')
