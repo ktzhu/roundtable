@@ -21,6 +21,7 @@
 	          {{ comment_count }} comment{{ comment_count|pluralize }}
 	          for {{ solution.title }}
 	      </h3>
+	      <h4>{{ solution.author.first_name }} {{ solution.author.last_name }}</h4>
 	      <div class="solution-comments">
 	          {% render_comment_list for solution %}
 	      </div>
@@ -28,11 +29,12 @@
 	</div>
 	
 	<div id="address-table-col">
-		<button id="text">Propose a resolution</button>
-		<form class="text-input">
-			<textarea rows="10" cols="30">Here is my awesome awesome ideal solution!</textarea>
-			<input type="submit" value="Submit" />
-		</form>
-	</div>
-
+		<button id="text">Propose a resolution</button>    
+    <form class="solution-input" method="post">
+        {% csrf_token %}
+        <input type="text" name="title" />
+        <textarea name="body"></textarea>
+        <input type="submit" name="submit" value="submit" />
+    </form>
+   </div>
 {% endblock %}

@@ -1,5 +1,7 @@
 $grad1: #bbb;
 $grad2: #eee;
+$dgrad1: #ddd;
+$dgrad2: #fff;
 
 body {
 	font-size: 10px;
@@ -20,17 +22,35 @@ h1 {
 
 .navitem {
     display: inline-block;
-    border: 1px solid black;
-    padding: 2px 5px;
-    background-color: #fee;
+    padding: 4px 30px;
+    background-color: #555;
+}
+
+div.navitem.even {
+    background-color: #844;
 }
 
 .navitem a {
+    color: white;
     text-decoration: none;
 }
 
 .navbar {
     text-align: center;
+}
+
+img.floatleft {
+    float: left;
+    margin: 7px;
+}
+
+div.clear {
+    clear: both;
+}
+
+table {
+    font-family: Arial, Tahoma, sans;
+    font-size: 13px;
 }
 
 body {
@@ -63,17 +83,30 @@ body {
 
 .description {
 		border: 1px solid black;
-		margin: 10px 0;
-    background-color: #eee;
+		margin: 10px 0 12px 0;
     padding: 10px;
     border: 1px solid #ccc;
+		box-shadow: #666 2px 2px 2px;
+background-image: linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -o-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -moz-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -webkit-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -ms-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right bottom,
+	color-stop(0.30, $dgrad2),
+	color-stop(0.96, $dgrad1)
+);
 }
 
 .attending {
     background-color: #eee;
-    padding: 10px;
+    padding: 10px 10px 12px 10px;
     border: 1px solid #ccc;
     font-weight: bold;
+		box-shadow: #666 2px 2px 2px;
 }
 
 .attending p {
