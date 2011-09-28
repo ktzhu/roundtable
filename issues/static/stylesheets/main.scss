@@ -1,7 +1,6 @@
-$blue: cornflowerblue;
-
 h1 {
-    color: $blue;
+    color: #33c;
+    text-shadow: #ccc 1px 1px;
 }
 
 div.navitem {
@@ -9,6 +8,10 @@ div.navitem {
     border: 1px solid black;
     padding: 2px 5px;
     background-color: #fee;
+}
+
+div.navitem a {
+    text-decoration: none;
 }
 
 div.navbar {
@@ -19,25 +22,44 @@ body {
     margin: 0;
     font-family: Arial, Tahoma, sans;
     font-size: 13px;
+    background: #eee;
 }
 
 div.content {
     width: 900px;
-    background: #ddd;
+    height: 100%;
+    background: #fff;
     margin: 0 auto;
     padding: 0 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 div.description {
 		border: 1px solid black;
-		padding: 15px;
 		margin: 10px 0;
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+div.attending {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+div.attending p {
+		margin: 0 0 4px 0;
 }
 
 div.person {
     display: inline-block;
     text-align: center;
     margin: 2px;
+    font-size: 80%;
+    font-weight: normal;
 }
 
 a.notifybtn {
