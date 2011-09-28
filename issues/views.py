@@ -1,9 +1,18 @@
 # Create your views here.
 
 from django.views.generic.simple import direct_to_template
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from django.http import HttpResponse
+from django.contrib.auth import authenticate
 from models import Issue, Solution, User
+
+def overview(request):
+    return direct_to_template(request, 'overview.html', {
+        'issues': Issue.objects.all(),
+    })    
+
+def latest(request):
+    return redirect(Issue.objects.latest(field_name='pk'))  
 
 def discover(request, issue):
     issue = get_object_or_404(Issue, slug=issue)

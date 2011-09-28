@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load comments %}
+
+{% block title %}All active tables{% endblock %}
+
+{% block body %}
+    {% for issue in issues %}
+        {% get_comment_count for issue as comment_count %}
+        <ul>
+            <li><a href="{{ issue.get_absolute_url }}">{{ issue.name }}</a> ({{ comment_count }} comment{{ comment_count|pluralize }}, {{ issue.solutions.count }} solution{{ issue.solutions.count|pluralize }})</li>
+        </ul>
+    {% endfor %}
+{% endblock %}

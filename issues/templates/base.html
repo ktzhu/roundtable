@@ -15,9 +15,11 @@
 				<div class="logo">
 					<img src="/static/images/rlogo.jpg" />
 				</div>
+				{% if issue %}
 				<div class="navbar">
 					{% block navitems %}{% endblock %}
 				</div>
+				{% endif %}
 
     		<h1>{% block title %}{% endblock %}</h1>
     		{% block body %}
