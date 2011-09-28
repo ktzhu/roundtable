@@ -1,36 +1,48 @@
 $grad1: #bbb;
 $grad2: #eee;
 
+body {
+	font-size: 10px;
+	font-family: 'Nobile', sans-serif;
+}
+
 h1 {
     color: #33c;
     text-shadow: #ccc 1px 1px;
 }
 
-div.navitem {
+.logo {
+	background: transparent;
+	text-indent: -9999px;
+	display: inline;
+	img { max-width: 200px; }
+}
+
+.navitem {
     display: inline-block;
     border: 1px solid black;
     padding: 2px 5px;
     background-color: #fee;
 }
 
-div.navitem a {
+.navitem a {
     text-decoration: none;
 }
 
-div.navbar {
+.navbar {
     text-align: center;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Tahoma, sans;
-    font-size: 13px;
-background-image: linear-gradient(top , $grad2 4%, $grad1 96%);
-background-image: -o-linear-gradient(top , $grad2 4%, $grad1 96%);
-background-image: -moz-linear-gradient(top , $grad2 4%, $grad1 96%);
-background-image: -webkit-linear-gradient(top , $grad2 4%, $grad1 96%);
-background-image: -ms-linear-gradient(top , $grad2 4%, $grad1 96%);
-background-image: -webkit-gradient(
+  margin: 0;
+  font-family: Arial, Tahoma, sans;
+  font-size: 13px;
+	background-image: linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -o-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -moz-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -webkit-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -ms-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -webkit-gradient(
 	linear,
 	left top,
 	left bottom,
@@ -39,7 +51,7 @@ background-image: -webkit-gradient(
 );
 }
 
-div.content {
+.content {
     width: 900px;
     height: 100%;
     background: #fff;
@@ -49,7 +61,7 @@ div.content {
     border-right: 1px solid #ccc;
 }
 
-div.description {
+.description {
 		border: 1px solid black;
 		margin: 10px 0;
     background-color: #eee;
@@ -57,18 +69,18 @@ div.description {
     border: 1px solid #ccc;
 }
 
-div.attending {
+.attending {
     background-color: #eee;
     padding: 10px;
     border: 1px solid #ccc;
     font-weight: bold;
 }
 
-div.attending p {
+.attending p {
 		margin: 0 0 4px 0;
 }
 
-div.person {
+.person {
     display: inline-block;
     text-align: center;
     margin: 2px;

@@ -1,10 +1,19 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ issue.name }}{% endblock title %}
+{% block title %}
+	<span style="text-transform: uppercase; font-size: 10pt;">The upcoming Roundtable will address the issue:</span><br />
+	{{ issue.name }}
+{% endblock title %}
 
 {% block body %}
 
-<div class="description">{{ issue.description }}</div>
+<div class="schedule">
+	The next Roundtable will occur on: <span style="text-transform: uppercase; font-size: 10pt;">Wednesday, September 28, 2011</span>.
+</div>
+
+<div class="description">
+	<em>{{ issue.description }}</em>
+</div>
 
 <div class="attending">
 	<p>10 people are interested in this roundtable:</p>
