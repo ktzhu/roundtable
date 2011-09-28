@@ -7,16 +7,16 @@ Roundtable is a web platform connecting news, people and ideas.
     virtualenv env --no-site-packages
     source env/bin/activate
     pip install -r requirements.txt
-    python manage.py syncdb
+    fab update
 
 ## Gimme a demo
 
-Do `python manage.py runserver` and surf to http://localhost:8000/something/discover/
+Do `python manage.py runserver` and surf to http://localhost:8000/how-can-we-make-hacktoberfest-even-better/resolve/
 
-To log into the admin site, surf to http://localhost:8000/something/discover/ and login with `missmoderator` as both username and password.
+To log into the admin site, surf to http://localhost:8000/admin/ and login with `missmoderator` as both username and password.
 
 ## And for development?
 
 Try `python manage.py runserver_plus` instead, to get the interactive debugger.
 
-We're not using migrations yet, but there are fixtures available to prepopulate an empty database. To clean and update the database, run `fab reset`.
+We're not using migrations yet, but there are fixtures available to prepopulate an empty database. To clean and update the database as well as installing any new dependencies, run `fab update`. You should do a preliminary `pip install -r requirements.txt` though, the first time you go through this process.
