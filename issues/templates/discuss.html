@@ -3,7 +3,43 @@
 
 {% block body %}
 
-{% get_comment_count for issue as comment_count %}
-{% render_comment_list for issue %}
-
+	{% get_comment_count for issue as comment_count %}
+	{% render_comment_list for issue %}
+	<div id="table-header">
+		<div id="badge">
+			Learn more!
+		</div>
+		
+		<div id="issue">
+			{{ issue.name }}
+		</div>
+		
+		<div id="featured-post"></div>
+	</div>
+	
+	<div id="post-thread-col">
+		{% for comment in comments %}
+			<div class="post">{{ comment.body }}</div>
+			{% if comment.children %}
+				{% for comment in comments %}
+					<div class="nested-comment">{{ comment.body }}</div>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</div>
+	
+	<div id="address-table-col">
+		<button id="text">Text</button>
+		<form class="text-input">
+			<textarea rows="10" cols="30">I have something to say it is text because it is a statement.</textarea>
+			<input type="submit" value="Submit" />
+		</form>
+		
+		<button id="question">Question</button>
+		<form class="question-input">
+			<textarea rows="10" cols="30">I can haz nomz?</textarea>
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+	
 {% endblock %}
