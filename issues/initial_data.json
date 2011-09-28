@@ -9,12 +9,12 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2011-09-28 06:32:24", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$b29aa$a4cdc52f968bd1ebbcb099be39be1a9215277401", 
+            "password": "sha1$15d9d$85340c8b37dc68aae8729be50873ee4de9ee85ad", 
             "email": "", 
-            "date_joined": "2011-09-28 06:32:24"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -27,12 +27,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:32:24", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$c7a81$5dcf8c6fe5d9af59175d2f39096719a212a21a12", 
+            "password": "sha1$12a7f$e0a6d42f9f8acdaa65c0d47557e7c3f184d195fd", 
             "email": "", 
-            "date_joined": "2011-09-28 06:32:24"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -45,12 +45,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:32:24", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$29e07$986f0e9a46075396b422b356c77573ffcca3bb6c", 
+            "password": "sha1$ef24d$d5184fec6bbf6128b79761c6bac2ba939a986aba", 
             "email": "", 
-            "date_joined": "2011-09-28 06:32:24"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -63,12 +63,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:32:24", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$75bcb$fc061adf923e504e518f9e02e6cfc85aad952a20", 
+            "password": "sha1$ea8da$4270e9e8f6300c16b058a60810745fc2ef8195dd", 
             "email": "", 
-            "date_joined": "2011-09-28 06:32:24"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -81,12 +81,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:32:24", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$634fb$68352fa2f516c2c73ed832d63971e32780a49caa", 
+            "password": "sha1$4792c$65da423c4d52f82ef8be82c8647673835e73a52d", 
             "email": "", 
-            "date_joined": "2011-09-28 06:32:24"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -162,12 +162,12 @@
         "pk": 1, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 18:32:23", 
+            "resolve": "2011-09-28 18:58:00", 
             "description": "Hacktoberfest has been great, but how could we make it even better next time around?", 
-            "discover": "2011-09-27 20:32:23", 
+            "discover": "2011-09-27 20:58:00", 
             "slug": "how-can-we-make-hacktoberfest-even-better", 
-            "vote": "2011-09-29 06:32:23", 
-            "discuss": "2011-09-28 10:32:23", 
+            "vote": "2011-09-29 06:58:00", 
+            "discuss": "2011-09-28 10:58:00", 
             "name": "How can we make Hacktoberfest even better"
         }
     }, 
@@ -175,12 +175,12 @@
         "pk": 2, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 04:32:23", 
+            "resolve": "2011-09-28 04:58:00", 
             "description": "Read the title, why don't you?", 
-            "discover": "2011-09-27 20:32:23", 
+            "discover": "2011-09-27 20:58:00", 
             "slug": "how-can-colleges-be-improved-to-combat-the-trend-of-credential-inflation", 
-            "vote": "2011-09-28 05:32:23", 
-            "discuss": "2011-09-27 22:32:23", 
+            "vote": "2011-09-28 05:58:00", 
+            "discuss": "2011-09-27 22:58:00", 
             "name": "How can colleges be improved to combat the trend of credential inflation?"
         }
     }, 
@@ -188,12 +188,12 @@
         "pk": 3, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 04:32:23", 
-            "description": "<img src=\"/static/images/newspaper.jpg\" width=\"100\" height=\"103\"/>", 
-            "discover": "2011-09-27 20:32:23", 
+            "resolve": "2011-09-28 04:58:00", 
+            "description": "\n<table>\n\t<tr>\n\t\t<td width=\"50%\">\n\t\t\t<img class=\"floatleft\" src=\"/static/images/composite.jpg\" width=\"150\" height=\"136\"/>\n\t\t\tFour score and seven years ago our fathers brought forth upon this continent a new\n\t\t\tnation, conceived in liberty, and dedicated to the proposition that all men are\n\t\t\tcreated equal.\n\t\t\t<div class=\"clear\"></div>\n\t\t</td>\n\t\t<td width=\"50%\">&nbsp;</td>\n\t</tr>\n</table>\n", 
+            "discover": "2011-09-27 20:58:00", 
             "slug": "journalism", 
-            "vote": "2011-09-28 05:32:23", 
-            "discuss": "2011-09-27 22:32:23", 
+            "vote": "2011-09-28 05:58:00", 
+            "discuss": "2011-09-27 22:58:00", 
             "name": "The Future of Journalism"
         }
     }, 
@@ -203,7 +203,7 @@
         "fields": {
             "comment": "Hullo", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:32:24", 
+            "submit_date": "2011-09-28 06:58:01", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -221,7 +221,7 @@
         "fields": {
             "comment": "You are totally right. More clowns, especially sad ones, are what is required.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:32:24", 
+            "submit_date": "2011-09-28 06:58:01", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -239,7 +239,7 @@
         "fields": {
             "comment": "James, I totally get what you're saying, but I guess I'm just not sure.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:32:24", 
+            "submit_date": "2011-09-28 06:58:01", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 

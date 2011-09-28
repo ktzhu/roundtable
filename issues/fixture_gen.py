@@ -45,7 +45,20 @@ def test_issues():
     _issues.create(
         name = "The Future of Journalism",
         slug = "journalism",
-        description = """<img src="/static/images/newspaper.jpg" width="100" height="103"/>""",
+        description = """
+<table>
+	<tr>
+		<td width="50%">
+			<img class="floatleft" src="/static/images/composite.jpg" width="150" height="136"/>
+			Four score and seven years ago our fathers brought forth upon this continent a new
+			nation, conceived in liberty, and dedicated to the proposition that all men are
+			created equal.
+			<div class="clear"></div>
+		</td>
+		<td width="50%">&nbsp;</td>
+	</tr>
+</table>
+""",
         discover = now - timedelta(hours=10),
         discuss = now - timedelta(hours=8),
         resolve = now - timedelta(hours=2),

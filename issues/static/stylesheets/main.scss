@@ -1,5 +1,7 @@
 $grad1: #bbb;
 $grad2: #eee;
+$dgrad1: #ddd;
+$dgrad2: #fff;
 
 h1 {
     color: #33c;
@@ -23,6 +25,20 @@ div.navitem a {
 
 div.navbar {
     text-align: center;
+}
+
+img.floatleft {
+    float: left;
+    margin: 7px;
+}
+
+div.clear {
+    clear: both;
+}
+
+table {
+    font-family: Arial, Tahoma, sans;
+    font-size: 13px;
 }
 
 body {
@@ -56,9 +72,20 @@ div.content {
 div.description {
 		border: 1px solid black;
 		margin: 10px 0;
-    background-color: #eee;
     padding: 10px;
     border: 1px solid #ccc;
+background-image: linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -o-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -moz-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -webkit-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -ms-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right bottom,
+	color-stop(0.30, $dgrad2),
+	color-stop(0.96, $dgrad1)
+);
 }
 
 div.attending {
