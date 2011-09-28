@@ -17,6 +17,8 @@ div.navbar {
 
 body {
     margin: 0;
+    font-family: Arial, Tahoma, sans;
+    font-size: 13px;
 }
 
 div.content {
@@ -24,4 +26,14 @@ div.content {
     background: #ddd;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+div.description {
+		margin: 15px;
+}
+
+div.person {
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
 }
