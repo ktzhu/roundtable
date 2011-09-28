@@ -17,6 +17,8 @@ div.navbar {
 
 body {
     margin: 0;
+    font-family: Arial, Tahoma, sans;
+    font-size: 13px;
 }
 
 div.content {
@@ -24,4 +26,33 @@ div.content {
     background: #ddd;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+div.description {
+		border: 1px solid black;
+		padding: 15px;
+		margin: 10px 0;
+}
+
+div.person {
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+}
+
+a.notifybtn {
+		display: block;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background: #88f;
+    color: #fff;
+    text-shadow: black 1px 1px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 2px solid #558;
+    border-top-color: #bbf;
+    border-left-color: #bbf;
 }
