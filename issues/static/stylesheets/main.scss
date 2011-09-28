@@ -71,9 +71,10 @@ div.content {
 
 div.description {
 		border: 1px solid black;
-		margin: 10px 0;
+		margin: 10px 0 12px 0;
     padding: 10px;
     border: 1px solid #ccc;
+		box-shadow: #666 2px 2px 2px;
 background-image: linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
 background-image: -o-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
 background-image: -moz-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
@@ -90,9 +91,10 @@ background-image: -webkit-gradient(
 
 div.attending {
     background-color: #eee;
-    padding: 10px;
+    padding: 10px 10px 12px 10px;
     border: 1px solid #ccc;
     font-weight: bold;
+		box-shadow: #666 2px 2px 2px;
 }
 
 div.attending p {
