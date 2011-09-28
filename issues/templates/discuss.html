@@ -5,12 +5,12 @@
 
 	{% get_comment_count for issue as comment_count %}
 	<div id="table-header">
-		<div id="badge">
-			Learn more!
+		<div class="badge">
+			<img src="/static/images/learn-more.png" />
 		</div>
 		
 		<div id="issue">
-			{{ issue.name }}
+			The issue at the table is: <span class="emphasize">{{ issue.name }}</span>.
 		</div>
 		
 		<div id="featured-post"></div>
