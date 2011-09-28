@@ -9,6 +9,7 @@
             {{ comment_count }} comment{{ comment_count|pluralize }}
             for {{ solution.title }}
         </h3>
+        <h4>{{ solution.author.first_name }} {{ solution.author.last_name }}</h4>
         <div class="solution-comments">
             {% render_comment_list for solution %}
         </div>
