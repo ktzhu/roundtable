@@ -18,12 +18,22 @@ div.navitem.even {
     background-color: #844;
 }
 
+div.logo {
+    width: 97px;
+		height: 59px;
+    background-image: url(/static/images/logo.jpg);
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
 div.navitem a {
     color: white;
     text-decoration: none;
 }
 
 div.navbar {
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -60,6 +70,7 @@ background-image: -webkit-gradient(
 }
 
 div.content {
+    position: relative;
     width: 900px;
     height: 100%;
     background: #fff;
