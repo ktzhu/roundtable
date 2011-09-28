@@ -15,9 +15,12 @@ h1 {
 
 .logo {
 	background: transparent;
-	text-indent: -9999px;
 	display: inline;
-	img { max-width: 200px; }
+	float: left;
+	margin-top: 5px;
+	font-family: 'Raleway', serif;
+	font-weight: bold;
+	font-size: 1.4em;
 }
 
 .navitem {
@@ -37,6 +40,8 @@ div.navitem.even {
 
 .navbar {
     text-align: center;
+    width: 700px;
+    margin-bottom: 10px;
 }
 
 img.floatleft {

@@ -4,15 +4,16 @@
 {% block body %}
 	<div id="table-header">
 		<div class="badge">
-			Learn more!
+			<a href="{% url issues.views.discover issue.slug %}"><img src="/static/images/learn-more.png" /></a>
 		</div>
 		
 		<div id="issue">
-			The issue at the table is: <span class="emphasize">{{ issue.name }}</span>.
+			The issue at the table is:<br />
+			<span class="emphasize">{{ issue.name }}?</span>
 		</div>
 		
 		<div id="featured-post"></div>
-	</div>
+	</div>	
 	
 	<div id="post-thread-col">
 	  {% for solution in solutions %}

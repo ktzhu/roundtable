@@ -110,6 +110,7 @@ MEDIA_BUNDLES = (
     ('main.css', 'stylesheets/main.scss'),
     ('post-ui.css', 'stylesheets/post-ui.scss'),
     ('main.js', 'scripts/dependencies/jquery-1.6.4.min.js', 'scripts/main.coffee'),
+    ('post.js', 'scripts/post.js'),
 )
 
 INSTALLED_APPS = (

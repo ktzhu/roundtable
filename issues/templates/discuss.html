@@ -6,18 +6,30 @@
 	{% get_comment_count for issue as comment_count %}
 	<div id="table-header">
 		<div class="badge">
-			<img src="/static/images/learn-more.png" />
+			<a href="{% url issues.views.discover issue.slug %}"><img src="/static/images/learn-more.png" /></a>
 		</div>
 		
 		<div id="issue">
-			The issue at the table is: <span class="emphasize">{{ issue.name }}</span>.
+			The issue at the table is:<br />
+			<span class="emphasize">{{ issue.name }}?</span>
 		</div>
 		
-		<div id="featured-post"></div>
+		<center><featured>
+			<div id="featchpost">
+				<div class="info"><em>New addresses to the table will appear time-lapsed here. Watch your comment fade out slowly…</em><p>
+					<ul id="recent">
+					</ul>
+				</div>
+			</div>
+		</featured></center>
+
+		<ol  id="update" class="timeline">
+		</ol>
+		<div id="flash" align="left"  ></div>
 	</div>
 	
-	<h3>{{ comment_count }} post{{ comment_count|pluralize }}</h3>
 	<div id="post-thread-col">
+	<h3>{{ comment_count }} post{{ comment_count|pluralize }}</h3>
 		{% render_comment_list for issue %}
 		
 <!--
@@ -33,17 +45,22 @@
 	</div>
 	
 	<div id="address-table-col">
-		<button id="text">Text</button>
-		<form class="text-input">
-			<textarea rows="10" cols="30">I have something to say it is text because it is a statement.</textarea>
-			<input type="submit" value="Submit" />
-		</form>
-		
-		<button id="question">Question</button>
-		<form class="question-input">
-			<textarea rows="10" cols="30">I can haz nomz?</textarea>
-			<input type="submit" value="Submit" />
-		</form>
-	</div>
+		<div style="margin-left:100px">
+			<button id="text">Text</button>
+			<form action="#" method="post">				
+				<span class="titles">Tell it to the table:</span><br>
+				<textarea name="comment" id="comment"></textarea><br />
+				
+				<input type="submit" class="submit" value=" Submit! " />
+			</form>
+			<button id="question">Question</button>
+			<form action="#" method="post">				
+				<span class="titles">Tell it to the table:</span><br>
+				<textarea name="comment" id="comment"></textarea><br />
+				
+				<input type="submit" class="submit" value=" Submit! " />
+			</form>
+		</div>
+</div>
 
 {% endblock %}
