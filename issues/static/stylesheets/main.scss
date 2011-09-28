@@ -8,12 +8,16 @@ h1 {
 
 div.navitem {
     display: inline-block;
-    border: 1px solid black;
-    padding: 2px 5px;
-    background-color: #fee;
+    padding: 4px 30px;
+    background-color: #555;
+}
+
+div.navitem.even {
+    background-color: #844;
 }
 
 div.navitem a {
+    color: white;
     text-decoration: none;
 }
 
