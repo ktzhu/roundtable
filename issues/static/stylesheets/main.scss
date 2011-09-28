@@ -3,3 +3,25 @@ $blue: cornflowerblue;
 h1 {
     color: $blue;
 }
+
+div.navitem {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 2px 5px;
+    background-color: #fee;
+}
+
+div.navbar {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+div.content {
+    width: 900px;
+    background: #ddd;
+    margin: 0 auto;
+    padding: 0 10px;
+}

@@ -9,18 +9,20 @@
             {% endblock %}
     </head>
     <body>
-			<div class="navbar">
-				<div class="navitem">Discover</div>
-				<div class="navitem">Discuss</div>
-				<div class="navitem">Resolve</div>
-				<div class="navitem">Vote</div>
-			</div>
+			<div class="content">
+				<div class="navbar">
+					<div class="navitem">Discover</div>
+					<div class="navitem">Discuss</div>
+					<div class="navitem">Resolve</div>
+					<div class="navitem">Vote</div>
+				</div>
 
-    <h1>{% block title %}{% endblock %}</h1>
-    {% block body %}
-    {% endblock %}
-    {% block scripts %}
-    {% include_media 'main.js' %}
-    {% endblock %}
+    		<h1>{% block title %}{% endblock %}</h1>
+    		{% block body %}
+    		{% endblock %}
+    		{% block scripts %}
+    		{% include_media 'main.js' %}
+    		{% endblock %}
+			</div>
     </body>
 </html>
