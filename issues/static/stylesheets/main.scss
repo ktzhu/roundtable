@@ -1,3 +1,6 @@
+$grad1: #bbb;
+$grad2: #eee;
+
 h1 {
     color: #33c;
     text-shadow: #ccc 1px 1px;
@@ -22,7 +25,18 @@ body {
     margin: 0;
     font-family: Arial, Tahoma, sans;
     font-size: 13px;
-    background: #eee;
+background-image: linear-gradient(top , $grad2 4%, $grad1 96%);
+background-image: -o-linear-gradient(top , $grad2 4%, $grad1 96%);
+background-image: -moz-linear-gradient(top , $grad2 4%, $grad1 96%);
+background-image: -webkit-linear-gradient(top , $grad2 4%, $grad1 96%);
+background-image: -ms-linear-gradient(top , $grad2 4%, $grad1 96%);
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.04, $grad2),
+	color-stop(0.96, $grad1)
+);
 }
 
 div.content {
