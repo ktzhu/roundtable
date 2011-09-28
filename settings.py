@@ -111,6 +111,8 @@ MEDIA_BUNDLES = (
     ('main.js', 'scripts/dependencies/jquery-1.6.4.min.js', 'scripts/main.coffee'),
 )
 
+LOGIN_REDIRECT_URL = "/latest/"
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -11,11 +11,13 @@
     <body>
 			<div class="content">
 				<div class="logo"></div>
+				{% if issue %}
 				<div class="navbar">
 					<div class="navitem"><a href="{% url issues.views.discover issue.slug %}">Discover</a></div>
 					<div class="navitem even"><a href="{% url issues.views.discuss issue.slug %}">Discuss</a></div>
 					<div class="navitem"><a href="{% url issues.views.resolve issue.slug %}">Resolve</a></div>
 				</div>
+				{% endif %}
 
     		<h1>{% block title %}{% endblock %}</h1>
     		{% block body %}
