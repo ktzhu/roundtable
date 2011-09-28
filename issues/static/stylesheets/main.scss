@@ -1,7 +1,6 @@
-$blue: cornflowerblue;
-
 h1 {
-    color: $blue;
+    color: #33c;
+    text-shadow: #ccc 1px 1px;
 }
 
 div.navitem {
@@ -11,17 +10,71 @@ div.navitem {
     background-color: #fee;
 }
 
+div.navitem a {
+    text-decoration: none;
+}
+
 div.navbar {
     text-align: center;
 }
 
 body {
     margin: 0;
+    font-family: Arial, Tahoma, sans;
+    font-size: 13px;
+    background: #eee;
 }
 
 div.content {
     width: 900px;
-    background: #ddd;
+    height: 100%;
+    background: #fff;
     margin: 0 auto;
     padding: 0 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+div.description {
+		border: 1px solid black;
+		margin: 10px 0;
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+div.attending {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+div.attending p {
+		margin: 0 0 4px 0;
+}
+
+div.person {
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    font-size: 80%;
+    font-weight: normal;
+}
+
+a.notifybtn {
+		display: block;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background: #88f;
+    color: #fff;
+    text-shadow: black 1px 1px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 2px solid #558;
+    border-top-color: #bbf;
+    border-left-color: #bbf;
 }

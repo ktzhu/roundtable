@@ -9,16 +9,6 @@ Roundtable is a web platform connecting news, people and ideas.
     pip install -r requirements.txt
     python manage.py syncdb
 
-## Updating to the latest version.
-
-We're not using fixtures yet. Therefore, the full update process
-looks something like this: 
-
-    git pull
-    rm db/db.sqlite3
-    python manage.py syncdb
-    python manage.py loaddata issues/fixtures.json
-
 ## Gimme a demo
 
 Do `python manage.py runserver` and surf to http://localhost:8000/something/discover/
@@ -28,3 +18,5 @@ To log into the admin site, surf to http://localhost:8000/something/discover/ an
 ## And for development?
 
 Try `python manage.py runserver_plus` instead, to get the interactive debugger.
+
+We're not using migrations yet, but there are fixtures available to prepopulate an empty database. To clean and update the database, run `fab reset`.

@@ -4,7 +4,6 @@
 {% block body %}
 
 	{% get_comment_count for issue as comment_count %}
-	{% render_comment_list for issue %}
 	<div id="table-header">
 		<div id="badge">
 			Learn more!
@@ -17,7 +16,11 @@
 		<div id="featured-post"></div>
 	</div>
 	
+	<h3>{{ comment_count }} post{{ comment_count|pluralize }}</h3>
 	<div id="post-thread-col">
+		{% render_comment_list for issue %}
+		
+<!--
 		{% for comment in comments %}
 			<div class="post">{{ comment.body }}</div>
 			{% if comment.children %}
@@ -26,6 +29,7 @@
 				{% endfor %}
 			{% endif %}
 		{% endfor %}
+-->
 	</div>
 	
 	<div id="address-table-col">
@@ -41,5 +45,5 @@
 			<input type="submit" value="Submit" />
 		</form>
 	</div>
-	
+
 {% endblock %}

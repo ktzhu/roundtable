@@ -1,0 +1,223 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "missmoderator", 
+            "first_name": "Miss", 
+            "last_name": "Moderator", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": false, 
+            "last_login": "2011-09-28 05:31:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$869e3$4100dd0e4b52abe9ec1f5b2647235e2c74f01d6f", 
+            "email": "", 
+            "date_joined": "2011-09-28 05:31:35"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "james.joyce", 
+            "first_name": "James", 
+            "last_name": "Joyce", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-28 05:31:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$99869$0c243f1964bd81e26850a86880abbdf7703b0b9b", 
+            "email": "", 
+            "date_joined": "2011-09-28 05:31:35"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "john.dewey", 
+            "first_name": "John", 
+            "last_name": "Dewey", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-28 05:31:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$77f0f$341e1ce586e435db1e2e82b4ed84e996c17707c9", 
+            "email": "", 
+            "date_joined": "2011-09-28 05:31:35"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "hannah.arendt", 
+            "first_name": "Hannah", 
+            "last_name": "Arendt", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-28 05:31:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$38e59$ebec68f8d65055ddae18347b9f5639820a2ddc6c", 
+            "email": "", 
+            "date_joined": "2011-09-28 05:31:35"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "iris.murdoch", 
+            "first_name": "Iris", 
+            "last_name": "Murdoch", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2011-09-28 05:31:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$177ff$3ad50cbf4edcd995bc2599831ff9880809f704c5", 
+            "email": "", 
+            "date_joined": "2011-09-28 05:31:35"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "issues.user", 
+        "fields": {
+            "user_permissions": [], 
+            "proxied_subscriptions": [], 
+            "groups": [], 
+            "subscriptions": []
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.rating", 
+        "fields": {
+            "score": 3, 
+            "user": 4, 
+            "solution": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.issue", 
+        "fields": {
+            "resolve": "2011-09-28 17:31:35", 
+            "description": "Yes, something.", 
+            "discover": "2011-09-27 19:31:35", 
+            "slug": "something", 
+            "vote": "2011-09-29 05:31:35", 
+            "discuss": "2011-09-28 09:31:35", 
+            "name": "Something"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "issues.issue", 
+        "fields": {
+            "resolve": "2011-09-28 03:31:35", 
+            "description": "Yes, something.", 
+            "discover": "2011-09-27 19:31:35", 
+            "slug": "something-else", 
+            "vote": "2011-09-28 04:31:35", 
+            "discuss": "2011-09-27 21:31:35", 
+            "name": "Something else"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.solution", 
+        "fields": {
+            "body": "Coincidentally, the solution to everything.", 
+            "author": 3, 
+            "issue": 1, 
+            "title": "More sad clowns."
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "comments.comment", 
+        "fields": {
+            "comment": "Hullo", 
+            "user_url": "", 
+            "submit_date": "2011-09-28 05:31:35", 
+            "ip_address": null, 
+            "object_pk": "1", 
+            "site": 1, 
+            "is_removed": false, 
+            "user": 2, 
+            "content_type": 11, 
+            "is_public": true, 
+            "user_name": "", 
+            "user_email": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "comments.comment", 
+        "fields": {
+            "comment": "You are totally right. More clowns, especially sad ones, are what is required.", 
+            "user_url": "", 
+            "submit_date": "2011-09-28 05:31:35", 
+            "ip_address": null, 
+            "object_pk": "1", 
+            "site": 1, 
+            "is_removed": false, 
+            "user": 2, 
+            "content_type": 12, 
+            "is_public": true, 
+            "user_name": "", 
+            "user_email": ""
+        }
+    }
+]
