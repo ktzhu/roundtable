@@ -1,0 +1,139 @@
+$grad1: #bbb;
+$grad2: #eee;
+$dgrad1: #ddd;
+$dgrad2: #fff;
+
+body {
+	font-size: 10px;
+	font-family: 'Nobile', sans-serif;
+}
+
+h1 {
+    color: #33c;
+    text-shadow: #ccc 1px 1px;
+}
+
+.logo {
+	background: transparent;
+	text-indent: -9999px;
+	display: inline;
+	img { max-width: 200px; }
+}
+
+.navitem {
+    display: inline-block;
+    padding: 4px 30px;
+    background-color: #555;
+}
+
+div.navitem.even {
+    background-color: #844;
+}
+
+.navitem a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    text-align: center;
+}
+
+img.floatleft {
+    float: left;
+    margin: 7px;
+}
+
+div.clear {
+    clear: both;
+}
+
+table {
+    font-family: Arial, Tahoma, sans;
+    font-size: 13px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Tahoma, sans;
+  font-size: 13px;
+	background-image: linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -o-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -moz-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -webkit-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -ms-linear-gradient(top , $grad2 4%, $grad1 96%);
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.04, $grad2),
+	color-stop(0.96, $grad1)
+);
+}
+
+.content {
+    width: 900px;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+    padding: 0 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.description {
+		border: 1px solid black;
+		margin: 10px 0 12px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+		box-shadow: #666 2px 2px 2px;
+background-image: linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -o-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -moz-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -webkit-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -ms-linear-gradient(left top, $dgrad2 30%, $dgrad1 96%);
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right bottom,
+	color-stop(0.30, $dgrad2),
+	color-stop(0.96, $dgrad1)
+);
+}
+
+.attending {
+    background-color: #eee;
+    padding: 10px 10px 12px 10px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+		box-shadow: #666 2px 2px 2px;
+}
+
+.attending p {
+		margin: 0 0 4px 0;
+}
+
+.person {
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    font-size: 80%;
+    font-weight: normal;
+}
+
+a.notifybtn {
+		display: block;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background: #88f;
+    color: #fff;
+    text-shadow: black 1px 1px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 2px solid #558;
+    border-top-color: #bbf;
+    border-left-color: #bbf;
+}
