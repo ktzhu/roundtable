@@ -39,3 +39,20 @@ div.person {
     text-align: center;
     margin: 2px;
 }
+
+a.notifybtn {
+		display: block;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background: #88f;
+    color: #fff;
+    text-shadow: black 1px 1px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 2px solid #558;
+    border-top-color: #bbf;
+    border-left-color: #bbf;
+}
