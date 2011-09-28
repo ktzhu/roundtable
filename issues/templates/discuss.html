@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load comments %}
+
 {% block body %}
+
+{% get_comment_count for issue as comment_count %}
+{% render_comment_list for issue %}
 
 {% endblock %}
