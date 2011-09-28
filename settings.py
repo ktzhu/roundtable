@@ -2,6 +2,7 @@
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+MEDIA_DEV_MODE = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -52,11 +53,11 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = './public'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+DEV_MEDIA_URL = STATIC_URL = '/static/'
 
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
@@ -89,6 +90,7 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'mediagenerator.middleware.MediaMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -104,6 +106,14 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+# mediagenerator.filters.coffeescript.CoffeeScript
+# mediagenerator.filters.sass.Sass
+
+MEDIA_BUNDLES = (
+    ('main.css', 'stylesheets/main.scss'),
+    ('main.js', 'scripts/dependencies/jquery-1.6.4.min.js', 'scripts/main.coffee'),
+)
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -113,7 +123,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.comments',
+    'django_extensions',
     'fixture_generator',
+    'mediagenerator',
     'roundtable.issues',
 )
 

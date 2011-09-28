@@ -1,17 +1,19 @@
+{% load media %}
 <html>
     <head>
         <title>Roundtable</title>
-        {% block stylesheets %}
-        
-        {% endblock %}
-        {% block scripts-async %}
-        {% endblock %}
+            {% block stylesheets %}
+            {% include_media 'main.css' %}
+            {% endblock %}
+            {% block scripts-async %}
+            {% endblock %}
     </head>
     <body>
     <h1>{% block title %}{% endblock %}</h1>
     {% block body %}
     {% endblock %}
     {% block scripts %}
+    {% include_media 'main.js' %}
     {% endblock %}
     </body>
 </html>

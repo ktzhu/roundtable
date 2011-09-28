@@ -22,3 +22,5 @@ looks something like this:
 ## Gimme a demo
 
 Do `python manage.py runserver` and surf to http://localhost:8000/something/discover/
+
+To log into the admin site, surf to http://localhost:8000/something/discover/ and login with `missmoderator` as both username and password.
