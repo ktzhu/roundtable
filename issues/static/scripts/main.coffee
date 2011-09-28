@@ -1,2 +1,2 @@
 $(document).ready ->
-    alert "hello there"
+    #alert "hello there"

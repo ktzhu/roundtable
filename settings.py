@@ -106,9 +106,6 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-# mediagenerator.filters.coffeescript.CoffeeScript
-# mediagenerator.filters.sass.Sass
-
 MEDIA_BUNDLES = (
     ('main.css', 'stylesheets/main.scss'),
     ('main.js', 'scripts/dependencies/jquery-1.6.4.min.js', 'scripts/main.coffee'),
