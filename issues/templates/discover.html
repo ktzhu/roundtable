@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<div class="description">{{ issue.description }}</div>
+<div class="description">{{ issue.description|safe }}</div>
 
 <div class="attending">
 	<p>10 people are interested in this roundtable:</p>
