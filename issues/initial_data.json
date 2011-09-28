@@ -9,12 +9,12 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2011-09-28 06:04:43", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$0d810$1ff67543ef2f85cbe7ecbb6440077d04d9ae47f2", 
+            "password": "sha1$15d9d$85340c8b37dc68aae8729be50873ee4de9ee85ad", 
             "email": "", 
-            "date_joined": "2011-09-28 06:04:43"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -27,12 +27,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:04:43", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$2f7e2$cd1dd1bc1f61186429fe2ca5a1bfacc4de16b6ce", 
+            "password": "sha1$12a7f$e0a6d42f9f8acdaa65c0d47557e7c3f184d195fd", 
             "email": "", 
-            "date_joined": "2011-09-28 06:04:43"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -45,12 +45,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:04:43", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$529de$f2e8d4bf665562927baf65c937841834ff197c31", 
+            "password": "sha1$ef24d$d5184fec6bbf6128b79761c6bac2ba939a986aba", 
             "email": "", 
-            "date_joined": "2011-09-28 06:04:43"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -63,12 +63,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:04:43", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$f719b$1f354e69fea13eb0ac70c6c58ceb3920bfffe22e", 
+            "password": "sha1$ea8da$4270e9e8f6300c16b058a60810745fc2ef8195dd", 
             "email": "", 
-            "date_joined": "2011-09-28 06:04:43"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -81,12 +81,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:04:43", 
+            "last_login": "2011-09-28 06:58:00", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$4e9c9$bc573cb5ade92c907f18623aac1eee649dd80d5a", 
+            "password": "sha1$4792c$65da423c4d52f82ef8be82c8647673835e73a52d", 
             "email": "", 
-            "date_joined": "2011-09-28 06:04:43"
+            "date_joined": "2011-09-28 06:58:00"
         }
     }, 
     {
@@ -150,45 +150,6 @@
     }, 
     {
         "pk": 1, 
-        "model": "issues.issue", 
-        "fields": {
-            "resolve": "2011-09-28 18:04:42", 
-            "description": "Hacktoberfest has been great, but how could we make it even better next time around?", 
-            "discover": "2011-09-27 20:04:42", 
-            "slug": "how-can-we-make-hacktoberfest-even-better", 
-            "vote": "2011-09-29 06:04:42", 
-            "discuss": "2011-09-28 10:04:42", 
-            "name": "How can we make Hacktoberfest even better"
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "issues.issue", 
-        "fields": {
-            "resolve": "2011-09-28 04:04:42", 
-            "description": "Read the title, why don't you?", 
-            "discover": "2011-09-27 20:04:42", 
-            "slug": "how-can-colleges-be-improved-to-combat-the-trend-of-credential-inflation", 
-            "vote": "2011-09-28 05:04:42", 
-            "discuss": "2011-09-27 22:04:42", 
-            "name": "How can colleges be improved to combat the trend of credential inflation?"
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "issues.issue", 
-        "fields": {
-            "resolve": "2011-09-28 04:04:42", 
-            "description": "Test", 
-            "discover": "2011-09-27 20:04:42", 
-            "slug": "journalism", 
-            "vote": "2011-09-28 05:04:42", 
-            "discuss": "2011-09-27 22:04:42", 
-            "name": "The Future of Journalism"
-        }
-    }, 
-    {
-        "pk": 1, 
         "model": "issues.solution", 
         "fields": {
             "body": "Coincidentally, the solution to everything.", 
@@ -199,11 +160,50 @@
     }, 
     {
         "pk": 1, 
+        "model": "issues.issue", 
+        "fields": {
+            "resolve": "2011-09-28 18:58:00", 
+            "description": "Hacktoberfest has been great, but how could we make it even better next time around?", 
+            "discover": "2011-09-27 20:58:00", 
+            "slug": "how-can-we-make-hacktoberfest-even-better", 
+            "vote": "2011-09-29 06:58:00", 
+            "discuss": "2011-09-28 10:58:00", 
+            "name": "How can we make Hacktoberfest even better"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "issues.issue", 
+        "fields": {
+            "resolve": "2011-09-28 04:58:00", 
+            "description": "Read the title, why don't you?", 
+            "discover": "2011-09-27 20:58:00", 
+            "slug": "how-can-colleges-be-improved-to-combat-the-trend-of-credential-inflation", 
+            "vote": "2011-09-28 05:58:00", 
+            "discuss": "2011-09-27 22:58:00", 
+            "name": "How can colleges be improved to combat the trend of credential inflation?"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "issues.issue", 
+        "fields": {
+            "resolve": "2011-09-28 04:58:00", 
+            "description": "\n<table>\n\t<tr>\n\t\t<td width=\"50%\">\n\t\t\t<img class=\"floatleft\" src=\"/static/images/composite.jpg\" width=\"150\" height=\"136\"/>\n\t\t\tFour score and seven years ago our fathers brought forth upon this continent a new\n\t\t\tnation, conceived in liberty, and dedicated to the proposition that all men are\n\t\t\tcreated equal.\n\t\t\t<div class=\"clear\"></div>\n\t\t</td>\n\t\t<td width=\"50%\">&nbsp;</td>\n\t</tr>\n</table>\n", 
+            "discover": "2011-09-27 20:58:00", 
+            "slug": "journalism", 
+            "vote": "2011-09-28 05:58:00", 
+            "discuss": "2011-09-27 22:58:00", 
+            "name": "The Future of Journalism"
+        }
+    }, 
+    {
+        "pk": 1, 
         "model": "comments.comment", 
         "fields": {
             "comment": "Hullo", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:04:43", 
+            "submit_date": "2011-09-28 06:58:01", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -221,7 +221,7 @@
         "fields": {
             "comment": "You are totally right. More clowns, especially sad ones, are what is required.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:04:43", 
+            "submit_date": "2011-09-28 06:58:01", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -239,7 +239,7 @@
         "fields": {
             "comment": "James, I totally get what you're saying, but I guess I'm just not sure.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:04:43", 
+            "submit_date": "2011-09-28 06:58:01", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 

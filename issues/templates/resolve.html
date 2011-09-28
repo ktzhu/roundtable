@@ -1,25 +1,46 @@
 {% extends 'base.html' %}
 {% load comments %}
 
-{% block body %}
+{% block navitems %}
+<div class="navitem"><a href="{% url issues.views.discover issue.slug %}">Discover</a></div>
+<div class="navitem even"><a href="{% url issues.views.discuss issue.slug %}">Discuss</a></div>
+<div class="navitem sel"><a href="{% url issues.views.resolve issue.slug %}">Resolve</a></div>
+{% endblock %}
 
-    {% for solution in solutions %}
-        {% get_comment_count for solution as comment_count %}
-        <h3>
-            {{ comment_count }} comment{{ comment_count|pluralize }}
-            for {{ solution.title }}
-        </h3>
-        <h4>{{ solution.author.first_name }} {{ solution.author.last_name }}</h4>
-        <div class="solution-comments">
-            {% render_comment_list for solution %}
-        </div>
-    {% endfor %}
-    
-    <form method="post">
+{% block body %}
+	<div id="table-header">
+		<div class="badge">
+			Learn more!
+		</div>
+		
+		<div id="issue">
+			The issue at the table is: <span class="emphasize">{{ issue.name }}</span>.
+		</div>
+		
+		<div id="featured-post"></div>
+	</div>
+	
+	<div id="post-thread-col">
+	  {% for solution in solutions %}
+	      {% get_comment_count for solution as comment_count %}
+	      <h3>
+	          {{ comment_count }} comment{{ comment_count|pluralize }}
+	          for {{ solution.title }}
+	      </h3>
+	      <h4>{{ solution.author.first_name }} {{ solution.author.last_name }}</h4>
+	      <div class="solution-comments">
+	          {% render_comment_list for solution %}
+	      </div>
+	  {% endfor %}
+	</div>
+	
+	<div id="address-table-col">
+		<button id="text">Propose a resolution</button>    
+    <form class="solution-input" method="post">
         {% csrf_token %}
         <input type="text" name="title" />
         <textarea name="body"></textarea>
         <input type="submit" name="submit" value="submit" />
     </form>
-
+   </div>
 {% endblock %}

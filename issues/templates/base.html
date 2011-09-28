@@ -4,18 +4,20 @@
         <title>Roundtable</title>
             {% block stylesheets %}
             {% include_media 'main.css' %}
+            {% include_media 'post-ui.css' %}
             {% endblock %}
             {% block scripts-async %}
             {% endblock %}
+         <link href='http://fonts.googleapis.com/css?family=Nobile:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     </head>
     <body>
 			<div class="content">
-				<div class="logo"></div>
+				<div class="logo">
+					<img src="/static/images/rlogo.jpg" />
+				</div>
 				{% if issue %}
 				<div class="navbar">
-					<div class="navitem"><a href="{% url issues.views.discover issue.slug %}">Discover</a></div>
-					<div class="navitem even"><a href="{% url issues.views.discuss issue.slug %}">Discuss</a></div>
-					<div class="navitem"><a href="{% url issues.views.resolve issue.slug %}">Resolve</a></div>
+					{% block navitems %}{% endblock %}
 				</div>
 				{% endif %}
 

@@ -1,16 +1,22 @@
 {% extends 'base.html' %}
 {% load comments %}
 
+{% block navitems %}
+<div class="navitem"><a href="{% url issues.views.discover issue.slug %}">Discover</a></div>
+<div class="navitem even sel"><a href="{% url issues.views.discuss issue.slug %}">Discuss</a></div>
+<div class="navitem"><a href="{% url issues.views.resolve issue.slug %}">Resolve</a></div>
+{% endblock %}
+
 {% block body %}
 
 	{% get_comment_count for issue as comment_count %}
 	<div id="table-header">
-		<div id="badge">
-			Learn more!
+		<div class="badge">
+			<img src="/static/images/learn-more.png" />
 		</div>
 		
 		<div id="issue">
-			{{ issue.name }}
+			The issue at the table is: <span class="emphasize">{{ issue.name }}</span>.
 		</div>
 		
 		<div id="featured-post"></div>
