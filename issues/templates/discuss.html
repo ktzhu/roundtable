@@ -53,14 +53,16 @@
 	<div id="address-table-col">
 		<div style="margin-left:100px">
 			<button id="text">Text</button>
-			<form action="#" method="post">				
+			<form action="#" method="post">		
+				{% csrf_token %}		
 				<span class="titles">Tell it to the table:</span><br>
 				<textarea name="comment" id="comment"></textarea><br />
 				
 				<input type="submit" class="submit" value=" Submit! " />
 			</form>
 			<button id="question">Question</button>
-			<form action="#" method="post">				
+			<form action="#" method="post">		
+				{% csrf_token %}		
 				<span class="titles">Tell it to the table:</span><br>
 				<textarea name="comment" id="comment"></textarea><br />
 				
