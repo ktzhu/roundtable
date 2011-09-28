@@ -42,9 +42,19 @@ def test_issues():
         vote = now - timedelta(hours=1),
         )
 
+    _issues.create(
+        name = "The Future of Journalism",
+        slug = "journalism",
+        description = "Test",
+        discover = now - timedelta(hours=10),
+        discuss = now - timedelta(hours=8),
+        resolve = now - timedelta(hours=2),
+        vote = now - timedelta(hours=1),
+        )
+
 @fixture_generator(issues.Solution, requires=['issues.test_users', 'issues.test_issues', ])
 def test_solutions():
-    issue1, issue2 = issues.Issue.objects.all()
+    issue1, issue2, issue3 = issues.Issue.objects.all()
     mod, user1, user2, user3, user4 = issues.User.objects.all()
     solutions = issues.Solution.objects
 
@@ -71,7 +81,7 @@ def test_ratings():
 def test_comments():
     _comments = comments.Comment.objects
     solution1 = issues.Solution.objects.all()[0]
-    issue1, issue2 = issues.Issue.objects.all()
+    issue1, issue2, issue3 = issues.Issue.objects.all()
     mod, user1, user2, user3, user4 = issues.User.objects.all()
         
     _comments.create(content_object=issue1, user=user1, site_id=1, comment="Hullo")
