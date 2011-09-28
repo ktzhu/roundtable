@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load comments %}
 
+{% block navitems %}
+<div class="navitem"><a href="{% url issues.views.discover issue.slug %}">Discover</a></div>
+<div class="navitem even"><a href="{% url issues.views.discuss issue.slug %}">Discuss</a></div>
+<div class="navitem sel"><a href="{% url issues.views.resolve issue.slug %}">Resolve</a></div>
+{% endblock %}
+
 {% block body %}
 	<div id="table-header">
 		<div class="badge">

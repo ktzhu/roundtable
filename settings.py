@@ -113,6 +113,8 @@ MEDIA_BUNDLES = (
     ('post.js', 'scripts/post.js'),
 )
 
+LOGIN_REDIRECT_URL = "/latest/"
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',

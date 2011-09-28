@@ -32,6 +32,9 @@ class Issue(models.Model):
 
     def __unicode__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return "/{slug}/discover/".format(slug=self.slug)
 
 class Solution(models.Model):
     issue = models.ForeignKey(Issue, related_name='solutions')
