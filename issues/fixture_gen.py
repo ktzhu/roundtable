@@ -1,6 +1,7 @@
 from fixture_generator import fixture_generator
 from issues import models as issues
 from django.contrib.auth import models as auth
+from django.contrib.comments import models as comments
 from datetime import datetime, timedelta
 
 now = datetime.today()
@@ -8,7 +9,8 @@ now = datetime.today()
 @fixture_generator(auth.User, issues.User)
 def test_users():
     users = issues.User.objects
-    users.create(username='missmoderator', first_name='Miss', last_name='Moderator')
+    users.create(username='missmoderator', 
+        first_name='Miss', last_name='Moderator', is_superuser=True)
     users.create(username='james.joyce', first_name='James', last_name='Joyce')
     users.create(username='john.dewey', first_name='John', last_name='Dewey')
     users.create(username='hannah.arendt', first_name='Hannah', last_name='Arendt')    
@@ -65,6 +67,15 @@ def test_ratings():
         score = 3,
         )
 
-@fixture_generator(requires=['issues.test_users', 'issues.test_issues', 'issues.test_solutions', 'issues.test_ratings', ])
+@fixture_generator(comments.Comment, requires=['issues.test_issues', 'issues.test_solutions', 'issues.test_users', ])
+def test_comments():
+    _comments = comments.Comment.objects
+    issue1, issue2 = issues.Issue.objects.all()
+    mod, user1, user2, user3, user4 = issues.User.objects.all()
+        
+    _comments.create(content_object=issue1, user=user1, site_id=1, comment='Hullo')
+    _comments.create(content_object=issue2, user=user1, site_id=1, comment='Hullo')
+
+@fixture_generator(requires=['issues.test_users', 'issues.test_issues', 'issues.test_solutions', 'issues.test_comments', 'issues.test_ratings', ])
 def __all__():
     pass

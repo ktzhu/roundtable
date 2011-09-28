@@ -4,6 +4,7 @@
 {% block body %}
 
 {% get_comment_count for issue as comment_count %}
+<h3>{{ comment_count }} comment{{ comment_count|pluralize }}</h3>
 {% render_comment_list for issue %}
 
 {% endblock %}
