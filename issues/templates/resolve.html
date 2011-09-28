@@ -1,4 +1,17 @@
 {% extends 'base.html' %}
+{% load comments %}
+
 {% block body %}
+
+    {% for solution in solutions %}
+        {% get_comment_count for solution as comment_count %}
+        <h3>
+            {{ comment_count }} comment{{ comment_count|pluralize }}
+            for {{ solution.title }}
+        </h3>
+        <div class="solution-comments">
+            {% render_comment_list for solution %}
+        </div>
+    {% endfor %}
 
 {% endblock %}
