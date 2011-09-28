@@ -9,12 +9,12 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2011-09-28 06:58:00", 
+            "last_login": "2011-09-28 07:52:10", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$15d9d$85340c8b37dc68aae8729be50873ee4de9ee85ad", 
+            "password": "sha1$b3134$4345e77f41370a9cc113f75d10ae43b9c749cd98", 
             "email": "", 
-            "date_joined": "2011-09-28 06:58:00"
+            "date_joined": "2011-09-28 07:52:10"
         }
     }, 
     {
@@ -27,12 +27,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:58:00", 
+            "last_login": "2011-09-28 07:52:10", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$12a7f$e0a6d42f9f8acdaa65c0d47557e7c3f184d195fd", 
+            "password": "sha1$cfa70$df4047d060caac687dc6a6347232f767ae7c7e94", 
             "email": "", 
-            "date_joined": "2011-09-28 06:58:00"
+            "date_joined": "2011-09-28 07:52:10"
         }
     }, 
     {
@@ -45,12 +45,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:58:00", 
+            "last_login": "2011-09-28 07:52:10", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$ef24d$d5184fec6bbf6128b79761c6bac2ba939a986aba", 
+            "password": "sha1$6f0f0$063a94c7d6a9d96650b5a2d3a2f6d738017e1310", 
             "email": "", 
-            "date_joined": "2011-09-28 06:58:00"
+            "date_joined": "2011-09-28 07:52:10"
         }
     }, 
     {
@@ -63,12 +63,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:58:00", 
+            "last_login": "2011-09-28 07:52:10", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$ea8da$4270e9e8f6300c16b058a60810745fc2ef8195dd", 
+            "password": "sha1$76655$2bf1c8a3d413a03c34849e029c1a7e970b61bb33", 
             "email": "", 
-            "date_joined": "2011-09-28 06:58:00"
+            "date_joined": "2011-09-28 07:52:10"
         }
     }, 
     {
@@ -81,12 +81,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 06:58:00", 
+            "last_login": "2011-09-28 07:52:10", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$4792c$65da423c4d52f82ef8be82c8647673835e73a52d", 
+            "password": "sha1$7fad4$43ff49df0ecf5f49543162537fbeb50acbc9c663", 
             "email": "", 
-            "date_joined": "2011-09-28 06:58:00"
+            "date_joined": "2011-09-28 07:52:10"
         }
     }, 
     {
@@ -162,12 +162,12 @@
         "pk": 1, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 18:58:00", 
+            "resolve": "2011-09-28 19:52:09", 
             "description": "Hacktoberfest has been great, but how could we make it even better next time around?", 
-            "discover": "2011-09-27 20:58:00", 
+            "discover": "2011-09-27 21:52:09", 
             "slug": "how-can-we-make-hacktoberfest-even-better", 
-            "vote": "2011-09-29 06:58:00", 
-            "discuss": "2011-09-28 10:58:00", 
+            "vote": "2011-09-29 07:52:09", 
+            "discuss": "2011-09-28 11:52:09", 
             "name": "How can we make Hacktoberfest even better"
         }
     }, 
@@ -175,12 +175,12 @@
         "pk": 2, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 04:58:00", 
+            "resolve": "2011-09-28 05:52:09", 
             "description": "Read the title, why don't you?", 
-            "discover": "2011-09-27 20:58:00", 
+            "discover": "2011-09-27 21:52:09", 
             "slug": "how-can-colleges-be-improved-to-combat-the-trend-of-credential-inflation", 
-            "vote": "2011-09-28 05:58:00", 
-            "discuss": "2011-09-27 22:58:00", 
+            "vote": "2011-09-28 06:52:09", 
+            "discuss": "2011-09-27 23:52:09", 
             "name": "How can colleges be improved to combat the trend of credential inflation?"
         }
     }, 
@@ -188,12 +188,12 @@
         "pk": 3, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 04:58:00", 
-            "description": "\n<table>\n\t<tr>\n\t\t<td width=\"50%\">\n\t\t\t<img class=\"floatleft\" src=\"/static/images/composite.jpg\" width=\"150\" height=\"136\"/>\n\t\t\tFour score and seven years ago our fathers brought forth upon this continent a new\n\t\t\tnation, conceived in liberty, and dedicated to the proposition that all men are\n\t\t\tcreated equal.\n\t\t\t<div class=\"clear\"></div>\n\t\t</td>\n\t\t<td width=\"50%\">&nbsp;</td>\n\t</tr>\n</table>\n", 
-            "discover": "2011-09-27 20:58:00", 
+            "resolve": "2011-09-28 05:52:09", 
+            "description": "\n<table>\n\t<tr>\n\t\t<td width=\"63%\">\n\t\t\t<img class=\"floatleft\" src=\"/static/images/composite.jpg\" width=\"150\" height=\"136\"/>\n\t\t\t<p>The rapid technological advances of the 20th and 21st centuries have transformed\n\t\t\tindustries large and small, and the world of journalism is no exception.  The way that\n\t\t\tmedia and news is generated, collected, and consumed is radically different than it was\n\t\t\tfifty years ago.</p>\n\t\t\t<div class=\"clear\"></div>\n\t\t</td>\n\t\t<td width=\"2%\">&nbsp;</td>\n\t\t<td width=\"35%\" valign=\"top\">\n\t\t\t<p><b>Links:</b></p>\n\t\t\t<p><a href=\"http://futureofjournalism.net/\">FutureOfJournalism.net</a></p>\n\t\t\t<p><a href=\"http://www.cf.ac.uk/jomec/conference/futureofjournalism/\">Future of Journalism Conference 2011</a></p>\n\t\t\t<p><a href=\"http://www.washingtonpost.com/opinions/five-myths-about-the-future-of-journalism/2011/04/05/AF5UxiuC_story.html\">Five myths about the future of journalism</a></p>\n\t\t\t<p><a href=\"http://blogs.reuters.com/mediafile/2011/09/26/the-future-of-journalism-in-the-uk/\">The future of journalism in the UK</a></p>\n\t\t\t<p><a href=\"http://www.guardian.co.uk/media/future-of-journalism\">The Guardian's Future of Journalism Conference</a></p>\n\t\t</td>\n\t</tr>\n</table>\n", 
+            "discover": "2011-09-27 21:52:09", 
             "slug": "journalism", 
-            "vote": "2011-09-28 05:58:00", 
-            "discuss": "2011-09-27 22:58:00", 
+            "vote": "2011-09-28 06:52:09", 
+            "discuss": "2011-09-27 23:52:09", 
             "name": "The Future of Journalism"
         }
     }, 
@@ -203,7 +203,7 @@
         "fields": {
             "comment": "Hullo", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:58:01", 
+            "submit_date": "2011-09-28 07:52:10", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -221,7 +221,7 @@
         "fields": {
             "comment": "You are totally right. More clowns, especially sad ones, are what is required.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:58:01", 
+            "submit_date": "2011-09-28 07:52:10", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -239,7 +239,7 @@
         "fields": {
             "comment": "James, I totally get what you're saying, but I guess I'm just not sure.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 06:58:01", 
+            "submit_date": "2011-09-28 07:52:10", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 

@@ -48,14 +48,23 @@ def test_issues():
         description = """
 <table>
 	<tr>
-		<td width="50%">
+		<td width="63%">
 			<img class="floatleft" src="/static/images/composite.jpg" width="150" height="136"/>
-			Four score and seven years ago our fathers brought forth upon this continent a new
-			nation, conceived in liberty, and dedicated to the proposition that all men are
-			created equal.
+			<p>The rapid technological advances of the 20th and 21st centuries have transformed
+			industries large and small, and the world of journalism is no exception.  The way that
+			media and news is generated, collected, and consumed is radically different than it was
+			fifty years ago.</p>
 			<div class="clear"></div>
 		</td>
-		<td width="50%">&nbsp;</td>
+		<td width="2%">&nbsp;</td>
+		<td width="35%" valign="top">
+			<p><b>Links:</b></p>
+			<p><a href="http://futureofjournalism.net/">FutureOfJournalism.net</a></p>
+			<p><a href="http://www.cf.ac.uk/jomec/conference/futureofjournalism/">Future of Journalism Conference 2011</a></p>
+			<p><a href="http://www.washingtonpost.com/opinions/five-myths-about-the-future-of-journalism/2011/04/05/AF5UxiuC_story.html">Five myths about the future of journalism</a></p>
+			<p><a href="http://blogs.reuters.com/mediafile/2011/09/26/the-future-of-journalism-in-the-uk/">The future of journalism in the UK</a></p>
+			<p><a href="http://www.guardian.co.uk/media/future-of-journalism">The Guardian's Future of Journalism Conference</a></p>
+		</td>
 	</tr>
 </table>
 """,
