@@ -11,10 +11,9 @@
     <body>
 			<div class="content">
 				<div class="navbar">
-					<div class="navitem">Discover</div>
-					<div class="navitem">Discuss</div>
-					<div class="navitem">Resolve</div>
-					<div class="navitem">Vote</div>
+					<div class="navitem"><a href="{% url issues.views.discover issue.slug %}">Discover</a></div>
+					<div class="navitem"><a href="{% url issues.views.discuss issue.slug %}">Discuss</a></div>
+					<div class="navitem"><a href="{% url issues.views.resolve issue.slug %}">Resolve</a></div>
 				</div>
 
     		<h1>{% block title %}{% endblock %}</h1>
