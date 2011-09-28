@@ -5,7 +5,7 @@
         "fields": {
             "comment": "Hullo", 
             "user_url": "", 
-            "submit_date": "2011-09-28 05:41:09", 
+            "submit_date": "2011-09-28 05:54:05", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -23,7 +23,7 @@
         "fields": {
             "comment": "You are totally right. More clowns, especially sad ones, are what is required.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 05:41:09", 
+            "submit_date": "2011-09-28 05:54:05", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -41,7 +41,7 @@
         "fields": {
             "comment": "James, I totally get what you're saying, but I guess I'm just not sure.", 
             "user_url": "", 
-            "submit_date": "2011-09-28 05:41:09", 
+            "submit_date": "2011-09-28 05:54:05", 
             "ip_address": null, 
             "object_pk": "1", 
             "site": 1, 
@@ -51,15 +51,6 @@
             "is_public": true, 
             "user_name": "", 
             "user_email": ""
-        }
-    }, 
-    {
-        "pk": 1, 
-        "model": "issues.rating", 
-        "fields": {
-            "score": 3, 
-            "user": 4, 
-            "solution": 1
         }
     }, 
     {
@@ -126,12 +117,12 @@
         "pk": 1, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 17:41:08", 
+            "resolve": "2011-09-28 17:54:05", 
             "description": "Hacktoberfest has been great, but how could we make it even better next time around?", 
-            "discover": "2011-09-27 19:41:08", 
+            "discover": "2011-09-27 19:54:05", 
             "slug": "how-can-we-make-hacktoberfest-even-better", 
-            "vote": "2011-09-29 05:41:08", 
-            "discuss": "2011-09-28 09:41:08", 
+            "vote": "2011-09-29 05:54:05", 
+            "discuss": "2011-09-28 09:54:05", 
             "name": "How can we make Hacktoberfest even better"
         }
     }, 
@@ -139,13 +130,22 @@
         "pk": 2, 
         "model": "issues.issue", 
         "fields": {
-            "resolve": "2011-09-28 03:41:08", 
+            "resolve": "2011-09-28 03:54:05", 
             "description": "Read the title, why don't you?", 
-            "discover": "2011-09-27 19:41:08", 
+            "discover": "2011-09-27 19:54:05", 
             "slug": "how-can-colleges-be-improved-to-combat-the-trend-of-credential-inflation", 
-            "vote": "2011-09-28 04:41:08", 
-            "discuss": "2011-09-27 21:41:08", 
+            "vote": "2011-09-28 04:54:05", 
+            "discuss": "2011-09-27 21:54:05", 
             "name": "How can colleges be improved to combat the trend of credential inflation?"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "issues.rating", 
+        "fields": {
+            "score": 3, 
+            "user": 4, 
+            "solution": 1
         }
     }, 
     {
@@ -157,13 +157,13 @@
             "last_name": "Moderator", 
             "is_active": true, 
             "is_superuser": true, 
-            "is_staff": false, 
-            "last_login": "2011-09-28 05:41:09", 
+            "is_staff": true, 
+            "last_login": "2011-09-28 05:54:05", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$09afb$cfcd2d96110b4b730c12a2366c6e64b9d98bc38f", 
+            "password": "sha1$de940$f2185d76fbd243dc52338daf38ba245b21d9a6fd", 
             "email": "", 
-            "date_joined": "2011-09-28 05:41:09"
+            "date_joined": "2011-09-28 05:54:05"
         }
     }, 
     {
@@ -176,12 +176,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 05:41:09", 
+            "last_login": "2011-09-28 05:54:05", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$c8df7$89ceaef5e5556a09d5b1c745f4ecb4a4563aa153", 
+            "password": "sha1$28291$190fbddc9f366d961eaa140aa1a0a1511e20bef0", 
             "email": "", 
-            "date_joined": "2011-09-28 05:41:09"
+            "date_joined": "2011-09-28 05:54:05"
         }
     }, 
     {
@@ -194,12 +194,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 05:41:09", 
+            "last_login": "2011-09-28 05:54:05", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$c5d4a$b816d6b014167b068e10d185261e1ba73472e00d", 
+            "password": "sha1$f5669$1bb02ff3daea7fd58967aeb9cccb3792dc98356d", 
             "email": "", 
-            "date_joined": "2011-09-28 05:41:09"
+            "date_joined": "2011-09-28 05:54:05"
         }
     }, 
     {
@@ -212,12 +212,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 05:41:09", 
+            "last_login": "2011-09-28 05:54:05", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$ef803$b4b69f744add3cc30dd814fb84b2fab6a93606aa", 
+            "password": "sha1$0ca0d$2cdfca29f8336c53834422193bde244a1fa6811c", 
             "email": "", 
-            "date_joined": "2011-09-28 05:41:09"
+            "date_joined": "2011-09-28 05:54:05"
         }
     }, 
     {
@@ -230,12 +230,12 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2011-09-28 05:41:09", 
+            "last_login": "2011-09-28 05:54:05", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$63a63$8eb627a168fdb5bd4d71f149c65649f63353f89b", 
+            "password": "sha1$11423$d6d5fe972bb5a41b676434c36d03189b202ea072", 
             "email": "", 
-            "date_joined": "2011-09-28 05:41:09"
+            "date_joined": "2011-09-28 05:54:05"
         }
     }
 ]
