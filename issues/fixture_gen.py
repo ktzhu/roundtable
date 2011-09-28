@@ -45,7 +45,7 @@ def test_issues():
     _issues.create(
         name = "The Future of Journalism",
         slug = "journalism",
-        description = "Test",
+        description = """<img src="/static/images/newspaper.jpg" width="100" height="103"/>""",
         discover = now - timedelta(hours=10),
         discuss = now - timedelta(hours=8),
         resolve = now - timedelta(hours=2),
