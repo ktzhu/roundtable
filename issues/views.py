@@ -27,5 +27,5 @@ def resolve(request, issue):
 
     return direct_to_template(request, 'resolve.html', {
         'issue': issue,
-        'solutions': issue.solutions,
+        'solutions': issue.solutions.all(),
     })

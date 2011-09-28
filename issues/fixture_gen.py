@@ -70,11 +70,13 @@ def test_ratings():
 @fixture_generator(comments.Comment, requires=['issues.test_issues', 'issues.test_solutions', 'issues.test_users', ])
 def test_comments():
     _comments = comments.Comment.objects
+    solution1 = issues.Solution.objects.all()[0]
     issue1, issue2 = issues.Issue.objects.all()
     mod, user1, user2, user3, user4 = issues.User.objects.all()
         
     _comments.create(content_object=issue1, user=user1, site_id=1, comment='Hullo')
-    _comments.create(content_object=issue2, user=user1, site_id=1, comment='Hullo')
+    _comments.create(content_object=solution1, user=user1, site_id=1, comment='You are totally right. More clowns, especially sad ones, are what is required.')
+    
 
 @fixture_generator(requires=['issues.test_users', 'issues.test_issues', 'issues.test_solutions', 'issues.test_comments', 'issues.test_ratings', ])
 def __all__():
