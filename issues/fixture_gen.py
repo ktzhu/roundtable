@@ -25,8 +25,8 @@ def test_users():
 def test_issues():
     _issues = issues.Issue.objects
     _issues.create(
-        name = 'Something',
-        description = 'Yes, something.',
+        name = 'How can we make Hacktoberfest even better',
+        description = 'Hacktoberfest has been great, but how could we make it even better next time around?',
         discover = now - timedelta(hours=10),
         discuss = now + timedelta(hours=4),
         resolve = now + timedelta(hours=12),
@@ -34,8 +34,8 @@ def test_issues():
         )
 
     _issues.create(
-        name = 'Something else',
-        description = 'Yes, something.',
+        name = 'How can colleges be improved to combat the trend of credential inflation?',
+        description = 'Read the title, why don\'t you?',
         discover = now - timedelta(hours=10),
         discuss = now - timedelta(hours=8),
         resolve = now - timedelta(hours=2),
@@ -76,6 +76,7 @@ def test_comments():
         
     _comments.create(content_object=issue1, user=user1, site_id=1, comment='Hullo')
     _comments.create(content_object=solution1, user=user1, site_id=1, comment='You are totally right. More clowns, especially sad ones, are what is required.')
+    _comments.create(content_object=solution1, user=user2, site_id=1, comment='James, I totally get what you\'re saying, but I guess I\'m just not sure.')
     
 
 @fixture_generator(requires=['issues.test_users', 'issues.test_issues', 'issues.test_solutions', 'issues.test_comments', 'issues.test_ratings', ])

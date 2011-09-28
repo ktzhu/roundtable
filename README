@@ -11,9 +11,9 @@ Roundtable is a web platform connecting news, people and ideas.
 
 ## Gimme a demo
 
-Do `python manage.py runserver` and surf to http://localhost:8000/something/discover/
+Do `python manage.py runserver` and surf to http://localhost:8000/how-can-we-make-hacktoberfest-even-better/resolve/
 
-To log into the admin site, surf to http://localhost:8000/something/discover/ and login with `missmoderator` as both username and password.
+To log into the admin site, surf to http://localhost:8000/admin/ and login with `missmoderator` as both username and password.
 
 ## And for development?
 
